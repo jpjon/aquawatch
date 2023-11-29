@@ -1,4 +1,4 @@
-# AquaWatch:Detecting Toxicity Levels of Algae Bloom
+# AquaWatch: Detecting Toxicity Levels of Algae Bloom
 
 ## Overview
 

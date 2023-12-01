@@ -54,11 +54,10 @@ def main_page():
     st.text("We classified the tiers based on the following categorization:")
 
     data = {
-        "Category": ["No advisory", "Caution", "Warning", "Danger"],
+        "Category": ["No advisory", "Caution", "Danger"],
         "Description": [
             "Total Microcystins: <0.8μg/L",
-            "Total Microcystins: 0.8μg/L to <6μg/L",
-            "Total Microcystins: 6μg/L to <20μg/L",
+            "Total Microcystins: 0.8μg/L to <20μg/L",
             "Total Microcystins: ≥20μg/L"
         ]
     }

@@ -32,5 +32,6 @@ Our final model utilizes a 2-steped multi-binary ResNet architecture. In the fir
 To run the Streamlit app locally, navigate to the `app` directory and use the following command:
 
 ```bash
+pip install streamlit
 streamlit run app.py
 

@@ -40,7 +40,7 @@ def about_page():
 def mission_page():
 
     # Add a banner with an image to your Streamlit page
-    st.image("data/danger_banner.png", use_column_width=True, width=None)
+    st.image("app/data/danger_banner.png", use_column_width=True, width=None)
 
     # Problem and Motivation
     st.title("Problem and Motivation")
@@ -95,7 +95,7 @@ def team_page():
     )
     
     # Image paths
-    image_paths = ["team/sally.png", "team/jonathan.png", "team/lynda.png", "team/jasmine.png"]
+    image_paths = ["app/team/sally.png", "app/team/jonathan.png", "app/team/lynda.png", "app/team/jasmine.png"]
     
     # Multi-line captions for each image
     captions = [

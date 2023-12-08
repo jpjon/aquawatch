@@ -15,9 +15,9 @@ def about_page():
 
     # Display images of the 3 tiers
     col1, col2, col3 = st.columns(3)
-    col1.image("data/no_advisory.jpg", caption='No Advisory', use_column_width=True)
-    col2.image("data/warning.jpg", caption='Caution', use_column_width=True)
-    col3.image("data/danger.jpg", caption='Danger', use_column_width=True)
+    col1.image("app/data/no_advisory.jpg", caption='No Advisory', use_column_width=True)
+    col2.image("app/data/warning.jpg", caption='Caution', use_column_width=True)
+    col3.image("app/data/danger.jpg", caption='Danger', use_column_width=True)
 
     st.text("We classified the tiers based on the following categorization:")
 

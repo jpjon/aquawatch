@@ -9,7 +9,7 @@ input_shape = (224, 224)
 model1 = load_model('models/Binary_ResNet1')
 
 def read_image(image_encoded):
-    pil_image = Image.open(BytesIO(image_encoded))
+    pil_image = Image.open(image_encoded)
     return pil_image
 
 def preprocess(image: Image.Image):

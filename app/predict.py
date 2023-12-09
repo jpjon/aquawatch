@@ -13,6 +13,7 @@ def read_image(image_encoded):
     return pil_image
 
 def preprocess(image: Image.Image):
+    image = image.convert('RGB')  # Convert to RGB
     image = image.resize(input_shape)
     image = img_to_array(image)
     image = image / 255

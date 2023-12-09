@@ -4,6 +4,7 @@ import tensorflow as tf
 import numpy as np
 import pandas as pd
 from streamlit.components.v1 import html
+from predict import read_image, predict_1, preprocess
 
 # Page 1: Main Page
 def about_page():
@@ -80,6 +81,12 @@ def submit_image():
         # Show the uploaded image
         img = Image.open(uploaded_file)
         st.image(img, caption='Uploaded Image.', use_column_width=True)
+        
+        preprocessed_img  = preprocess(img)
+        
+        prediction = predict_1(preprocessed_img)
+        
+        st.text(f"This is {prediction}")
 
 # Page 4: Team Page
 def team_page():

@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+from io import BytesIO
 import tensorflow as tf
 import numpy as np
 import pandas as pd

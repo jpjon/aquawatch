@@ -79,7 +79,7 @@ def submit_image():
 
     if uploaded_file is not None:
         # Show the uploaded image
-        img = Image.open(uploaded_file)
+        img = read_image(uploaded_file)
         st.image(img, caption='Uploaded Image.', use_column_width=True)
         
         preprocessed_img  = preprocess(img)

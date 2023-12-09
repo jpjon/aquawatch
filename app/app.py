@@ -1,6 +1,5 @@
 import streamlit as st
 from PIL import Image
-from io import BytesIO
 import tensorflow as tf
 import numpy as np
 import pandas as pd
@@ -80,7 +79,10 @@ def submit_image():
 
     if uploaded_file is not None:
         # Show the uploaded image
-        img = read_image(uploaded_file)
+        img = Image.open(uploaded_file)
+        
+        img = read_image(img)
+        
         st.image(img, caption='Uploaded Image.', use_column_width=True)
         
         preprocessed_img  = preprocess(img)

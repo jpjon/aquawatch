@@ -25,6 +25,6 @@ def predict_1(image: np.ndarray):
     threshold = 0.5
     
     if model1.predict(image)[0] >= threshold:
-        return "no advisory"
-    else:
         return "some algae"
+    else:
+        return "no advisory"

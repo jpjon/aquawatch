@@ -7,6 +7,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 input_shape = (224, 224)
 
 model1 = load_model('models/Binary_ResNet1')
+model2 = load_model('models/Binary_ResNet2')
 
 def read_image(image_encoded):
     pil_image = Image.open(image_encoded)
@@ -26,6 +27,18 @@ def predict_1(image: np.ndarray):
     threshold = 0.5
     
     if model1.predict(image)[0] >= threshold:
-        return "some algae"
+        return "There is some level of algae in the uploaded image."
     else:
-        return "no advisory"
+        return "No algae was detected in the uploaded image."
+    
+def predict_2(image: np.ndarray):
+    # Add batch dimension to the input image
+    image = np.expand_dims(image, axis=0)
+    threshold = 0.5
+    
+    if model2.predict(image)[0] >= threshold:
+        # can maybe make this markdown if you want to bold some stuff
+        return "There is a dangerous level of algae in the image."
+    else:
+        return "There is a cautious level of algae in the image."
+    

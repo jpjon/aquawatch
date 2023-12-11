@@ -33,3 +33,18 @@ with col2:
 
     # Display the mission text using st.markdown
     st.markdown(source_text)
+    
+    st.subheader('Data Source Links')
+    # Dataset links:
+    cayuga_url = "http://www.communityscience.org/monitoring-partnerships/harmful-algal-bloom-monitoring/harmful-algal-bloom-datasets/"
+    cayuga_text = "Cayuga Lake"
+    Clear_url = "https://www.facebook.com/ClearLakeWaterQuality/photos"
+    Clear_text = "Clear Lake"
+    Wyoming_url = "https://wdeq.maps.arcgis.com/apps/Shortlist/index.html?appid=342d22d86d0048819b8dfa61dd3ff061"
+    Wyoming_text = "Wyoming Waters"
+    Florida_url = "https://floridadep.gov/AlgalBloom"
+    Florida_text = "Florida Waters"
+    st.markdown(f"[{cayuga_text}]({cayuga_url})")
+    st.markdown(f"[{Clear_text}]({Clear_url})")
+    st.markdown(f"[{Wyoming_text}]({Wyoming_url})")
+    st.markdown(f"[{Florida_text}]({Florida_url})")

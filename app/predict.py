@@ -27,9 +27,9 @@ def predict_1(image: np.ndarray):
     threshold = 0.5
     
     if model1.predict(image)[0] >= threshold:
-        return "There is some level of algae in the uploaded image."
+        return ("some algae", model1.predict(image)[0])
     else:
-        return "No algae was detected in the uploaded image."
+        return ("No Advisory", (1 - model1.predict(image)[0]))
     
 def predict_2(image: np.ndarray):
     # Add batch dimension to the input image
@@ -38,7 +38,6 @@ def predict_2(image: np.ndarray):
     
     if model2.predict(image)[0] >= threshold:
         # can maybe make this markdown if you want to bold some stuff
-        return "There is a dangerous level of algae in the image."
+        return ("Dangerous", model2.predict(image)[0])
     else:
-        return "There is a cautious level of algae in the image."
-    
+        return ("Caution", (1 - model2.predict(image)[0]))

@@ -18,10 +18,10 @@ image_paths = ["app/team/sally.png", "app/team/jonathan.png", "app/team/lynda.pn
 
 # LinkedIn profile URLs for each individual
 linkedin_urls = [
-    "https://www.linkedin.com/in/sallyfang",
-    "https://www.linkedin.com/in/jonathanphan",
-    "https://www.linkedin.com/in/lyndasolischavez",
-    "https://www.linkedin.com/in/jasmineteo"
+    "https://www.linkedin.com/in/xinsallyfang/",
+    "https://www.linkedin.com/in/jonathan-phann/",
+    "https://www.linkedin.com/in/lynda-solis-chavez/",
+    "https://www.linkedin.com/in/teoyinyin/"
 ]
 
 # URL of the LinkedIn logo image
